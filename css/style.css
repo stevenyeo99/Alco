@@ -1,0 +1,9 @@
+.txtIndo,
+.txtEng,
+.txtCenter {
+    text-align: center;
+}
+
+.txtEng {
+    font-style: italic;
+}
