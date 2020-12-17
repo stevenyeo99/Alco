@@ -7,163 +7,287 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <script src="./assets/js/script.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="./assets/img/Alco Logo - OK-1.ico">
     </head>
 
     <body>
-        <header>
-            <nav>
-                <img src="./assets/img/Alco Logo - OK-1.jpg" id="headerLogo">
+        <div class="wrapper">
+            <header>
+                <nav class="nav-bar">
+                    <div class="alco">
+                        <i class="fa fa-bars link" onclick="toggleNavBarClass()"></i>
+                    </div>
 
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
+                    <div class="nav-bar-left">
+                        <img src="./assets/img/Alco Logo - OK-1.jpg" id="headerLogo">
+                    </div>
 
-                    <li>
-                        <a href="#">Company Group</a>
-                    </li>
+                    <div id="navContent" class="nav-bar-right">
+                        <ul>
+                            <li>
+                                <a class="link" href="#">Home</a>
+                            </li>
 
-                    <li>
-                        <i class="fa fa-facebook-square"></i>
-                    </li>
+                            <li>
+                                <a class="link" href="#">Group</a>
+                            </li>
 
-                    <li>
-                        <i class="fa fa-instagram"></i>
-                    </li>
+                            <li>
+                                <i class="fa fa-facebook-square link"></i>
+                                &nbsp;
+                                <i class="fa fa-instagram link"></i>
+                            </li>
 
-                    <li>
-                        <select id="ddlLang" onchange="changeLanguage(this.value)">
-                            <option value="ENG">ENG - English</option>
-                            <option value="ID">ID - Indonesia</option>
-                        </select>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        
+                            <li>
+                                <select id="ddlLang" onchange="changeLanguage(this.value)">
+                                    <option value="ENG">ENG - English</option>
+                                    <option value="ID">ID - Indonesia</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
 
-        <div class="container">
-            <div class="firstChild">
-                <h1 class="txtCenter">ALCO GROUP</h1>
+            <div id="alcoGroupBanner">
+                <div class="firstChild">
+                    <h1 class="txtCenter txtContent">ALCO GROUP</h1>
 
-                <div class="txtIndo txtCenter">
-                    <b>ALCO GROUP</b> adalah group usaha yang didirikan atas inisiatif dan impian besar bapak Budiyanto Alpi. Beliau menjalankan usaha pertamanya pada tahun 2003 dengan nama CV. Alco Jaya Mandiri yang kemudian berubah bentuk menjadi perusahaan berbadan hukum PT Alco Jaya Raya pada tahun 2007. Seiring perkembangan usaha dan kemajuan Kota Batam menjadi kota metropolitan, bapak Budiyanto Alpi selaku founder dan owner melebarkan kiprahnya ke berbagai bidang usaha demi mewujudkan bisnis berlandaskan creation &amp; innovation.
+                    <div class="txtIndo txtCenter txtContent">
+                        <b>ALCO GROUP</b> adalah group usaha yang didirikan atas inisiatif dan impian besar bapak Budiyanto Alpi. Beliau menjalankan usaha pertamanya pada tahun 2003 dengan nama CV. Alco Jaya Mandiri yang kemudian berubah bentuk menjadi perusahaan berbadan hukum PT Alco Jaya Raya pada tahun 2007. Seiring perkembangan usaha dan kemajuan Kota Batam menjadi kota metropolitan, bapak Budiyanto Alpi selaku founder dan owner melebarkan kiprahnya ke berbagai bidang usaha demi mewujudkan bisnis berlandaskan creation &amp; innovation.
+                    </div>
+
+                    <br>
+                    
+                    <div class="txtEng txtCenter txtContent">
+                        ALCO GROUP is a business group founded on the initiative and big dream of Mr. Budiyanto Alpi. He ran his first business in 2003 under the name CV. Alco Jaya Mandiri, which later changed its form to a legal entity PT Alco Jaya Raya in 2007. Along with the business development and progress of Batam City to become a metropolitan city, Mr. Budiyanto Alpi as the founder and owner expanded his company to various business fields in order to create a business based on creation &amp; innovation.
+                    </div>
+
+                    <div class="bossImg">
+                        <!-- follow up on the image -->
+                    </div>
+
+                    <h1 class="txtCenter txtContent">VISI</h1>
+
+                    <div class="txtIndo txtCenter txtContent">
+                        "Menjadikan Alco dikenal di seluruh Indonesia"
+                    </div>
+
+                    <br>
+
+                    <div class="txtEng txtCenter txtContent">
+                        "Making Alco known throughout Indonesia"
+                    </div>
+
+                    <h1 class="txtCenter txtContent">MISI</h1>
+
+                    <div class="txtIndo txtCenter txtContent">
+                        "Membangun perusahaan diberbagai bidang usaha dengan memegang prinsip creation dan innovation"
+                    </div>
+
+                    <br>
+
+                    <div class="txtEng txtCenter txtContent">
+                        "To develop companies in various business fields by holding the principles of creation and innovation"
+                    </div>
                 </div>
 
-                <br>
-                
-                <div class="txtEng txtCenter">
-                    ALCO GROUP is a business group founded on the initiative and big dream of Mr. Budiyanto Alpi. He ran his first business in 2003 under the name CV. Alco Jaya Mandiri, which later changed its form to a legal entity PT Alco Jaya Raya in 2007. Along with the business development and progress of Batam City to become a metropolitan city, Mr. Budiyanto Alpi as the founder and owner expanded his company to various business fields in order to create a business based on creation &amp; innovation.
-                </div>
+                <div class="secondChild">
+                    <h1 class="txtCenter txtContent">COMPANY CULTURE</h1>
 
-                <div class="bossImg">
-                    <!-- follow up on the image -->
-                </div>
+                    <ul class="txtContent">
+                        <li>
+                            Integrity
 
-                <h1 class="txtCenter">VISI</h1>
+                            <ul>
+                                <li class="txtEng">
+                                    To create company integrity, we should be leading our life with honesty, commitment and intelligence
+                                </li>
 
-                <div class="txtIndo txtCenter">
-                    "Menjadikan Alco dikenal di seluruh Indonesia"
-                </div>
+                                <li class="txtIndo">
+                                    Untuk menciptakan perusahaan yang berintegritas, kita harus menjalani hidup dengan kejujuran, komitmen dan kecerdasan.
+                                </li>
+                            </ul>
+                        </li>
 
-                <br>
+                        <li>
+                            Empathy
 
-                <div class="txtEng txtCenter">
-                    "Making Alco known throughout Indonesia"
-                </div>
+                            <ul>
+                                <li class="txtEng">
+                                    People need to help and understand each other to make the company goals can achieve the maximum results, so the benefit will proper to all parties.
+                                </li>
 
-                <h1 class="txtCenter">MISI</h1>
+                                <li class="txtIndo">
+                                    Kita harus membantu dan memahami satu sama lain untuk membuat perusahaan mencapai hasil yang maksimal, sehingga hasilnya bermanfaat bagi kesejahteraan semua pihak.
+                                </li>
+                            </ul>
+                        </li>
 
-                <div class="txtIndo txtCenter">
-                    "Membangun perusahaan diberbagai bidang usaha dengan memegang prinsip creation dan innovation"
-                </div>
+                        <li>
+                            Loyalty
 
-                <br>
+                            <ul>
+                                <li class="txtEng">
+                                    Being obedient and loyal are proof of value commitment you made for yourself and others.
+                                </li>
 
-                <div class="txtEng txtCenter">
-                    "To develop companies in various business fields by holding the principles of creation and innovation"
+                                <li class="txtIndo">
+                                    Menjadi patuh dan setia adalah bukti dari nilai komitmen yang kamu buat untuk diri sendiri dan orang lain.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            Agility
+
+                            <ul>
+                                <li class="txtEng">
+                                    To achieve our goals in the company, we must be fast, careful and precise under any circumstances.
+                                </li>
+
+                                <li class="txtIndo">
+                                    Untuk mencapai tujuan di perusahaan, kita harus cepat, cermat dan tepat dalam keadaan apapun.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            Unity
+
+                            <ul>
+                                <li class="txtEng">
+                                    As individual, each of us represent one color, as a team we became a rainbow.
+                                </li>
+
+                                <li class="txtIndo">
+                                    Saat kita sendiri kita hanyalah satu warna, ketika bersama sebagai tim kita bisa menjadi pelangi.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="secondChild">
-                <h1 class="txtCenter">COMPANY CULTURE</h1>
+            <!-- group site -->
+            <div class="groupContainer">
+                <h1 class="txtCenter txtContent">GROUP</h1>
 
-                <ul>
-                    <li>
-                        Integrity
+                <br>
 
-                        <ul>
-                            <li class="txtEng">
-                                To create company integrity, we should be leading our life with honesty, commitment and intelligence
-                            </li>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/img/Alco Logo - OK-1.jpg">
+                        </div>
 
-                            <li class="txtIndo">
-                                Untuk menciptakan perusahaan yang berintegritas, kita harus menjalani hidup dengan kejujuran, komitmen dan kecerdasan.
-                            </li>
-                        </ul>
-                    </li>
+                        <div class="card-body">
+                            <h1>PT ALCO JAYA RAYA</h1>
+                        </div>
+                    </div>
 
-                    <li>
-                        Empathy
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/img/Wongtech Logo 14 (1).png">
+                        </div>
 
-                        <ul>
-                            <li class="txtEng">
-                                People need to help and understand each other to make the company goals can achieve the maximum results, so the benefit will proper to all parties.
-                            </li>
+                        <div class="card-body">
+                            <h1>PT WONGTECH ERA GLOBALINDO</h1>
+                        </div>
+                    </div>
 
-                            <li class="txtIndo">
-                                Kita harus membantu dan memahami satu sama lain untuk membuat perusahaan mencapai hasil yang maksimal, sehingga hasilnya bermanfaat bagi kesejahteraan semua pihak.
-                            </li>
-                        </ul>
-                    </li>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/img/Alco Logo - OK-1.jpg">
+                        </div>
 
-                    <li>
-                        Loyalty
+                        <div class="card-body">
+                            <h1>PT ALCO DANA MANDIRI</h1>
+                        </div>
+                    </div>
 
-                        <ul>
-                            <li class="txtEng">
-                                Being obedient and loyal are proof of value commitment you made for yourself and others.
-                            </li>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/img/Alco Logo - OK-1.jpg">
+                        </div>
 
-                            <li class="txtIndo">
-                                Menjadi patuh dan setia adalah bukti dari nilai komitmen yang kamu buat untuk diri sendiri dan orang lain.
-                            </li>
-                        </ul>
-                    </li>
+                        <div class="card-body">
+                            <h1>ALCO COLLECTION</h1>
+                        </div>
+                    </div>
 
-                    <li>
-                        Agility
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/img/Alco Logo - OK-1.jpg">
+                        </div>
 
-                        <ul>
-                            <li class="txtEng">
-                                To achieve our goals in the company, we must be fast, careful and precise under any circumstances.
-                            </li>
+                        <div class="card-body">
+                            <h1>PT ALCO JAYA MOBILINDO</h1>
+                        </div>
+                    </div>
 
-                            <li class="txtIndo">
-                                Untuk mencapai tujuan di perusahaan, kita harus cepat, cermat dan tepat dalam keadaan apapun.
-                            </li>
-                        </ul>
-                    </li>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/img/Alco Logo - OK-1.jpg">
+                        </div>
 
-                    <li>
-                        Unity
+                        <div class="card-body">
+                            <h1>KOPERASI SIMPAN PINJAM ALCO DANA SEJAHTERA</h1>
+                        </div>
+                    </div>
 
-                        <ul>
-                            <li class="txtEng">
-                                As individual, each of us represent one color, as a team we became a rainbow.
-                            </li>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/img/conuts.JPG">
+                        </div>
 
-                            <li class="txtIndo">
-                                Saat kita sendiri kita hanyalah satu warna, ketika bersama sebagai tim kita bisa menjadi pelangi.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                        <div class="card-body">
+                            <h1>ALCOconut's</h1>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>
+                                <i>(coming soon)</i>
+                            </h1>
+                        </div>
+
+                        <div class="card-body">
+                            <h1>ALCOffee</h1>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>
+                                <i>(coming soon)</i>
+                            </h1>
+                        </div>
+
+                        <div class="card-body">
+                            <h1>PT Alco Global Technology</h1>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>
+                                <i>(coming soon)</i>
+                            </h1>
+                        </div>
+
+                        <div class="card-body">
+                            <h1>PT Alco Farmindo Lestari</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            
+            <footer>
+                <p>Copyright 2020 &copy; Alco Group</p>
+            </footer>
         </div>
-        
-        <footer>
-            <p>Copyright 2020 &copy; Alco Group</p>
-        </footer>
     </body>
 </html>

@@ -38,6 +38,11 @@ function firstLoad() {
     changeLanguage(sessionLang);
 }
 
+function toggleNavBarClass() {
+    var element = document.getElementById('navContent');
+    element.classList.toggle("active");
+}
+
 window.onload = function () {
     firstLoad();
 }
