@@ -70,7 +70,7 @@ nav.nav-bar .nav-bar-right ul li a:hover {
 /* End Header Navbar section */
 
 .txtContent {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .txtCenter {
@@ -91,13 +91,25 @@ nav.nav-bar .nav-bar-right ul li a:hover {
 
 /* Background Image */
 #alcoGroupBanner {
-    background: url('../img/101220_1x1M.jpg') no-repeat center center fixed;
+    /* background: url('../img/101220_1x1M.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 700px; */
+    background-image: url('../img/101220_1x1M.jpg');
+    height: 250px;
+    background: transparent no-repeat center;
+    background-size: cover;
 }
 /* End Background Image */
+
+/* Background Image Text Content */
+div.firstChild,
+div.secondChild {
+    padding: 10px 25px;
+}
+/* End Background Image Text Content */
 
 /* Company Group Section */
 .groupContainer {
